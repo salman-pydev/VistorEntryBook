@@ -1,0 +1,94 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+<center><h1 style="margin-top: 25px;margin-bottom: 5px">Product List with Catalog and Pricing</h1></center>
+<br>
+<div class="container">
+          <div class="container-fluid">
+        <div class="row">
+             <div class="col-md-1 col-sm-4 col-xs-12"></div>
+            <div class="col-md-10 col-sm-4 col-xs-12">
+            <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Sr No.</th>
+      <th scope="col">Product List</th>
+      <th scope="col">Catalog</th>
+      <th scope="col">Pricing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>SEW Cross Shaft, Single Point, Gap Frame ( C Frame) - SNX Series</td>
+      <td><a href="{%static 'media/SNX_SERIES_CATALOGUE.pdf'%}">Catalog</a></td>
+      <td>8.5 Lakh</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>SEW Heavy Duty Gap Frame Power Press - SNK Series</td>
+      <td><a href="{%static 'media/SNK_catalogue.pdf'%}">Catalog</a></td>
+      <td>8.1 Lakh</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >SEW Cross Shaft,Double Crank, Gap Frame ( C Frame) - SNX-2 Series</td>
+      <td><a href="{%static 'media/SNX_2_Series.pdf'%}">Catalog</a></td>
+        <td>6.5 Lakh</td>
+    </tr>
+   <tr>
+      <th scope="row">4</th>
+      <td >SEW Straight Side, Cross Shaft, Single Point, Ring Frame - SNXR Series</td>
+      <td><a href="{%static 'media/SNXR_Series.pdf'%}">Catalog</a></td>
+        <td>5.5 Lakh</td>
+    </tr>
+   <tr>
+      <th scope="row">5</th>
+      <td >SEW Link Motion, Cross Shaft Power Press - SLX & SLXR Series</td>
+      <td><a href="{%static 'media/SLX-SLXR-Series.pdf'%}">Catalog</a></td>
+        <td>7.5 Lakh</td>
+    </tr>
+   <tr>
+      <th scope="row">6</th>
+      <td >SEW Heavy Stamping Straight Sided Power Presses-SBP Series</td>
+      <td><a href="{%static 'media/SBP_FRONT_BACK.pdf'%}">Catalog</a></td>
+        <td>8.3 Lakh</td>
+    </tr>
+   <tr>
+      <th scope="row">7</th>
+      <td >SEW Straight Side, Double Crank - SXP-2 Series</td>
+      <td><a href="{%static 'media/SNX_2_Series.pdf'%}">Catalog</a></td>
+        <td>6.5 Lakh</td>
+    </tr>
+   <tr>
+      <th scope="row">8</th>
+      <td >SEW High Speed Precision Power Press - HSD Series</td>
+      <td><a href="{%static 'media/SEW_High_Speed_Precision_Power_Press_-_HSD_Series.pdf'%}">Catalog</a></td>
+        <td>4.5 Lakh</td>
+    </tr>
+   <tr>
+      <th scope="row">9</th>
+      <td >SEW Double Column, Two Point Power Press - SDC Series</td>
+      <td><a href="{%static 'media/SDC_Power_Presses.pdf'%}">Catalog</a></td>
+        <td>4.5 Lakh</td>
+    </tr>
+  </tbody>
+</table>
+
+ <div class="col-md-2 col-sm-4 col-xs-12"></div>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+           integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

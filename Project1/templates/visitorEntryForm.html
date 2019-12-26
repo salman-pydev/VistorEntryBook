@@ -1,0 +1,103 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Visitor Entry Book</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'CSS/stylesheet1.css'%}">
+</head>
+<body>
+<section class="container-fluid bg">
+        <section class="row justify-content-center">
+            <section class="col-10 col-sm-6 col-md-3">
+                <form class="form-container" action="/VisitorData/" method="post">
+                      {% csrf_token %}
+                      <center><h1 >Visitor Entry Book </h1></center>
+
+                     <div class="form-group">
+                    <label> Name</label>
+                        <input type="text" class="form-control"  placeholder=" Name" name="name" style="width: 320px">
+                </div>
+                    <div class="form-group">
+                    <label>Company Name</label>
+                        <input type="text" class="form-control"  placeholder="CompanyName" name="Cname" style="width: 320px">
+                </div>
+              <div class="form-group">
+                    <label>Email </label>
+                        <input type="email" class="form-control"  placeholder="Email" name="email" style="width: 320px">
+                </div>
+
+                 <div class="form-group">
+                    <label>Contact No</label>
+                        <input type="number" class="form-control"  placeholder="Contact No" name="ContactNo" style="width: 320px">
+                </div>
+                 <div class="form-group">
+                    <label>Date</label>
+                        <input type="date" class="form-control" name="date" style="width: 320px">
+                </div>
+                      <div class="form-group">
+                    <label for="inputAddress2">Address </label>
+                      <textarea type="text" class="form-control" id="inputAddress2" placeholder="Address" rows="2" name="add" style="width: 320px"></textarea>
+                </div>
+                 <div class="form-group">
+                    <label>City</label>
+                        <input type="text" class="form-control"  placeholder="City" name="City" style="width: 320px">
+                </div>
+                    <div class="form-group ">
+                        <label >State</label>
+                        <select class="form-control"  name="state" style="width: 320px">
+                            <option selected>Choose...</option>
+                            <option>Andra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar"> Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madya Pradesh">Madya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya"> Meghalaya</option>
+                            <option value="Mizoram"> Mizoram</option>
+                            <option value="Nagaland"> Nagaland</option>
+                            <option value="Orissa"> Orissa</option>
+                            <option value="Punjab"> Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu"> Tamil Nadu</option>
+                            <option value="Telagana">Telagana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttaranchal"> Uttaranchal</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </div>
+
+                        <div class="form-group">
+                    <label for="inputAddress2">Note </label>
+                      <textarea type="text" class="form-control" id="inputAddress2" placeholder="Note" rows="2" name="note" style="width: 320px"></textarea>
+                </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                  </form>
+            </section>
+        </section>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+</body>
+</html>
